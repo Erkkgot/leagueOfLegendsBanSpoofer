@@ -10,7 +10,7 @@
     font-family: 'spiegel-regular';
     src: url(src/SpiegelSans-Regular.otf);
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
 h1 {
     font-family: 'beaufort-regular';
@@ -47,7 +47,12 @@ p {
     background-color: #010A13;
     border: solid 2px #553D1E;
     padding: 30px 50px 30px 50px;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
+
 #conteiner::-webkit-scrollbar {
     padding-right: 5px;
     margin: 15px;
@@ -57,7 +62,7 @@ p {
     background-color: #785A28;
     border-radius: 5px;
     height: 50%;
-  }
+}
 #conteiner > hr {
     width: 100%;
     border: 1px solid #1B2026;
@@ -89,11 +94,24 @@ p {
 #conteiner > div {
     align-items: center;
     margin: auto;
+    max-height: 200px;
     height: 200px;
     width: 90%;
     background-color: #10191D;
     background-image: linear-gradient(to bottom, #10191D 80%, #010A13 );
     margin-top: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+#chatlogs::-webkit-scrollbar {
+    padding-right: 5px;
+    margin: 15px;
+    width: 5px;
+}
+#chatlogs::-webkit-scrollbar-thumb {
+    background-color: #785A28;
+    border-radius: 5px;
+    height: 50%;
 }
 #chatlogs > div {
     margin-left: 15px;
@@ -106,4 +124,38 @@ p {
 }
 .messageContent {
     color: #838176;;
+}
+
+#inputs {
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#inputs * {
+    height: 30px;
+    width: 200px;
+    outline: none;
+    background-color: #323059;
+    color: white;
+    border: none;
+    outline: none;
+    font-family: sans-serif;
+}
+#inputs *::placeholder {
+    color: white;
+}
+#createMessage {
+    border-radius: 5px;
+    background-color: #5858BF;
+    color: black;
+    cursor: pointer;
+}
+#inputs *:not(#createMessage) { 
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding-inline-start: 15px;
 }
