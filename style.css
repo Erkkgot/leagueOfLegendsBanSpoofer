@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'beaufort-regular';
+    src: url(src/BeaufortforLOL-Regular.ttf);
+}
+@font-face {
+    font-family: 'beaufort-italic';
+    src: url(src/BeaufortforLOL-Italic.ttf);
+}
+@font-face {
+    font-family: 'spiegel-regular';
+    src: url(src/SpiegelSans-Regular.otf);
+}
+
+
+h1 {
+    font-family: 'beaufort-regular';
+    font-size: 20pt;
+    letter-spacing: 3px;
+}
+h2 {
+    font-family: 'beaufort-regular';
+    font-size: 15pt;
+    letter-spacing: 1px;
+}
+a {
+    font-family: 'spiegel-regular';
+    font-size: 9pt;
+}
+h3 {
+    font-family: 'beaufort-italic';
+    font-size: 12pt;
+}
+li {
+    font-family: 'spiegel-regular';
+    font-size: 10pt;
+}
+p {
+    font-family: 'spiegel-regular';
+    font-size: 10pt;
+}
+
+#conteiner {
+    max-height: 520px;
+    width: 500px;
+    overflow-x:hidden;
+    overflow-y: scroll;
+    background-color: #010A13;
+    border: solid 2px #553D1E;
+    padding: 30px 50px 30px 50px;
+}
+#conteiner::-webkit-scrollbar {
+    padding-right: 5px;
+    margin: 15px;
+    width: 5px;
+}
+#conteiner::-webkit-scrollbar-thumb {
+    background-color: #785A28;
+    border-radius: 5px;
+    height: 50%;
+  }
+#conteiner > hr {
+    width: 100%;
+    border: 1px solid #1B2026;
+}   
+#conteiner > h1 {
+    text-align: center;
+    color: #DBD2C1;
+}
+#conteiner > h2 {
+    color: #DBD2C1;
+    display: inline;
+}
+#conteiner > a {
+    color: #036B7C;
+    text-decoration: none;
+    display: inline;
+    margin-left: 61.2%;
+    white-space: nowrap;
+}
+#conteiner > h3 {
+    color: #838176;
+}
+#conteiner li {
+    color: #838176;
+}
+#conteiner > p {
+    color: #838176;
+}
+#conteiner > div {
+    align-items: center;
+    margin: auto;
+    height: 200px;
+    width: 90%;
+    background-color: #10191D;
+    background-image: linear-gradient(to bottom, #10191D 80%, #010A13 );
+    margin-top: 15px;
+}
+#chatlogs > div {
+    margin-left: 15px;
+}
+#chatlogs > div:first-child {
+    padding-top: 5px;
+}
+.nick {
+    color: #B0A57F;
+}
+.messageContent {
+    color: #838176;;
+}
